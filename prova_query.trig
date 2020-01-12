@@ -16,10 +16,10 @@
 @prefix np: <http://www.nanopub.org/nschema#> . 
 
 hf:Graph_HF_I_44v_45r_Carta_Rep1 {
-     hf:HF_I_44v_45r_Carta_Rep1 a np:Nanopublication .
-     hf:HF_I_44v_45r_Carta_Rep1 np:hasAssertion hf:Graph_HF_I_44v_45r_Carta_Rep1_assertion .
-     hf:HF_I_44v_45r_Carta_Rep1 np:hasProvenance hf:hf:Graph_HF_I_44v_45r_Carta_Rep1_provenance .
-     hf:HF_I_44v_45r_Carta_Rep1 np:hasPublicationInfo hf:Graph_HF_I_44v_45r_Carta_Rep1_pubInfo .
+     hf:G_HF_I_12v_13r_Carta_LC_quote2 a np:Nanopublication .
+     hf:G_HF_I_12v_13r_Carta_LC_quote2 np:hasAssertion hf:Graph_HF_I_44v_45r_Carta_Rep1_assertion .
+     hf:G_HF_I_12v_13r_Carta_LC_quote2 np:hasProvenance hf:hf:Graph_HF_I_44v_45r_Carta_Rep1_provenance .
+     hf:G_HF_I_12v_13r_Carta_LC_quote2 np:hasPublicationInfo hf:Graph_HF_I_44v_45r_Carta_Rep1_pubInfo .
 }
 
 
