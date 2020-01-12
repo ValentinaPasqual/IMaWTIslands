@@ -1,0 +1,57 @@
+@prefix hf: <urlgithub#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vir: <http://w3id.org/vir#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix hico: <http://purl.org/emmedi/hico/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix oaentry: <http://purl.org/emmedi/oaentry/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> . 
+
+hf:Graph_HF_I_44v_45r_Carta_Rep1 {
+     hf:HF_I_44v_45r_Carta_Rep1 a np:Nanopublication .
+     hf:HF_I_44v_45r_Carta_Rep1 np:hasAssertion hf:Graph_HF_I_44v_45r_Carta_Rep1_assertion .
+     hf:HF_I_44v_45r_Carta_Rep1 np:hasProvenance hf:hf:Graph_HF_I_44v_45r_Carta_Rep1_provenance .
+     hf:HF_I_44v_45r_Carta_Rep1 np:hasPublicationInfo hf:Graph_HF_I_44v_45r_Carta_Rep1_pubInfo .
+}
+
+
+hf:Graph_HF_I_44v_45r_Carta_Rep1_assertion {
+hf:HF_I_44v_45r_Carta vir:K1_denotes hf:HF_I_44v_45r_Carta_Rep1 .
+hf:HF_I_44v_45r_Carta_Rep1 a vir:IC1_Iconographic_Atom ; 
+    vir:K17_has_attribute hf:HF_I_44v_45r_Carta_Attr1 ; 
+    vir:K17_has_attribute hf:HF_I_44v_45r_Carta_Attr2 ; 
+    vir:K17_has_attribute hf:HF_I_44v_45r_Carta_Attr3 ; 
+    vir:K17_has_attribute hf:HF_I_44v_45r_Carta_Attr4 ;
+    vir:K17_has_attribute hf:HF_I_44v_45r_Carta_Attr5 .
+hf:HF_I_44v_45r_Carta_Attr1 rdfs:label "corso inferiore del Po"@ita ;
+    cidoc:P67_refers_to hf:Corso_inferiore_po .
+hf:HF_I_44v_45r_Carta_Attr2 rdfs:label "la catena degli Appennini"@ita ;
+    cidoc:P67_refers_to hf:Appennini .
+hf:HF_I_44v_45r_Carta_Attr3 rdfs:label "alcune città e centri minori"@ita .
+hf:HF_I_44v_45r_Carta_Attr4 rdfs:"antico delta padano"@ita ;
+    cidoc:P67_refers_to hf:antico_delta_padano .
+hf:HF_I_44v_45r_Carta_Attr5 rdfs: "Via Popolia-Annia"@ita ; 
+    cidoc:P67_refers_to hf:Via_Popolia_Annia . 
+}
+
+hf:Graph_HF_I_44v_45r_Carta_Rep1_provenance {
+    hf:Graph_HF_I_44v_45r_Carta_Rep1_assertion prov:wasGeneratedBy hf:HF_I_44v_45r_Carta_Rep1_IntAct . 
+    hf:HF_I_44v_45r_Carta_Rep1_IntAct a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:SourceMaterial_Phylology ; 
+        hico:hasInterpretationCriterion hf:visual_recognition ;
+        hico:hasInterpretationType hf:phylological_interpretation ;
+        prov:wasAssociatedWith hf:LC .
+}
+
+hf:Graph_HF_I_44v_45r_Carta_Rep1_pubInfo {
+    hf:G_HF_I_12v_13r_Carta_LC_quote2 prov:wasAttributedTo hf:Person_VP .
+    hf:G_HF_I_12v_13r_Carta_LC_quote2 prov:generatedAtTime "2019-11-26T14:31:00Z"^^xsd:dateTime .
+}
